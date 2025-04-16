@@ -38,14 +38,12 @@ contract UserRegistry {
 
     function addUser(string memory _name, uint128 _age, string memory  _class, uint128 _studentId, bool _isRegistered ) public onlyOwner validAddress validArray  {
         // users[_id] = UserInfo(_name, _age, _class, _studentId, _isRegistered);
-        require(!_isRegistered, "user is registered");
-
         users.push(UserInfo(_name, _age, _class, _studentId, _isRegistered));
     }
 
     function UpdateUser(string memory _name, uint32 _id, uint128 _age, string memory  _class) public onlyOwner validAddress validArray  {
         // users[_id] = UserInfo(_name, _age, _class, _studentId, _isRegistered);
-        require(users[_id].isRegistered == false, "user is not registered");
+        require(users[_id].isRegistered == true, "user is not registered");
 
         users[_id].name = _name;
         users[_id].age = _age;

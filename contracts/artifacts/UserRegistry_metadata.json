@@ -251,11 +251,11 @@
 	},
 	"sources": {
 		"contracts/UserRegistry.sol": {
-			"keccak256": "0xf34285be89f71d790053d3c5a25e811b6412ac8ad3076b0ffc69d683d5fcbecb",
+			"keccak256": "0x4e3d165961bf8fcc7a42295b7fe2c9063875d298de8b88268c30bb05fd6ea647",
 			"license": "GPL-3.0 OR MIT",
 			"urls": [
-				"bzz-raw://e0fb10aa66c2692fe460512243cf0a160948f617c1522d90b2c53bf800a09e0e",
-				"dweb:/ipfs/QmRLXvk3zo5Yo8CHRBeMcMrVXfvFZJnhjnFeEdrNPKcYBq"
+				"bzz-raw://e99a848ca120f52b8360aa73e5942a84e00281f09f91d7585a3ab860e462a734",
+				"dweb:/ipfs/Qmbc64RBVDWVCdTJEhfjbcvgY8VFAcfL5LBEMNgRmaiGSJ"
 			]
 		}
 	},
