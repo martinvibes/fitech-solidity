@@ -1,18 +1,17 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.17;
+// Compatible with OpenZeppelin Contracts ^5.0.0
+pragma solidity ^0.8.22;
 
-import "@openzeppelin/contracts/token/ERC721/extensions/ERC721URIStorage.sol";
-import "@openzeppelin/contracts/access/Ownable.sol";
+import {ERC721} from "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import {Ownable} from "@openzeppelin/contracts/access/Ownable.sol";
 
-contract QuickNodeNFT is ERC721URIStorage, Ownable {
-    constructor() ERC721("QuickNode Sharks", "QNS") Ownable(msg.sender) {}
+contract MyToken is ERC721, Ownable {
+    constructor(address initialOwner)
+        ERC721("MyToken", "MTK")
+        Ownable(initialOwner)
+    {}
 
-    function mint(
-        address _to,
-        uint256 _tokenId,
-        string calldata _uri
-    ) external onlyOwner {
-        _mint(_to, _tokenId);
-        _setTokenURI(_tokenId, _uri);
+    function safeMint(address to, uint256 tokenId) public onlyOwner {
+        _safeMint(to, tokenId);
     }
 }
