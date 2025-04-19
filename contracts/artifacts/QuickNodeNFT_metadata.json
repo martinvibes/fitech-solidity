@@ -731,7 +731,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/MyTokenNft.sol": "QuickNodeNFT"
+			"contracts/Nft.sol": "QuickNodeNFT"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -897,7 +897,7 @@
 				"dweb:/ipfs/QmVUSvooZKEdEdap619tcJjTLcAuH6QBdZqAzWwnAXZAWJ"
 			]
 		},
-		"contracts/MyTokenNft.sol": {
+		"contracts/Nft.sol": {
 			"keccak256": "0x4d4c257fb31c7f821d57c19c6ae15fe46e64f0889c7acde81209d4d91544b8a6",
 			"license": "MIT",
 			"urls": [
